@@ -1,0 +1,51 @@
+.collection {
+  min-height: 100vh;
+  background: #f6f1eb;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  padding: 120px 100px;
+  align-items: center;
+}
+
+.collection-left img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.collection-right h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.collection-right p {
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 420px;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+.collection-link {
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.collection-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #111;
+  transition: width 0.3s ease;
+}
+
+.collection-link:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,62 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 70px;
+    background: transparent;
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
+}
+
+.navbar .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.navbar .nav-right{
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-right span{
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.navbar .nav-right span:hover,
+.navbar .logo:hover {
+    opacity: 0.6;
+}
+
+/* Center logo absolutely */
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    transition: 
+      background 0.4s ease,
+      backdrop-filter 0.4s ease,
+      box-shadow 0.4s ease;
+}
+
+/* Scroll state */
+.navbar-scrolled {
+    background: rgba(246, 241, 235, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
