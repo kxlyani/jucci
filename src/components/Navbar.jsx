@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './Navbar.css'
 
@@ -6,29 +7,26 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
+      setScrolled(window.scrollY > 50)
     }
 
     window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
-      <div className="nav-center">
-        <span className="logo">M A R K E T</span>
-      </div>
+      <div className="navbar-inner">
+        <div className="nav-center">
+          <Link to="/" className="logo">
+            M A R K E T
+          </Link>
+        </div>
 
-      <div className="nav-right">
-        <span>Women</span>
-        <span>Men</span>
+        <div className="nav-right">
+          <Link to="/collection">Collection</Link>
+          <Link to="/campaign">Campaign</Link>
+        </div>
       </div>
     </nav>
   )

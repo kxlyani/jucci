@@ -1,0 +1,39 @@
+.campaign {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 140px 100px;
+  background: #fff;
+  align-items: center;
+}
+
+.campaign-image img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+}
+
+.campaign-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #777;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.campaign-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.campaign-content p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #333;
+  max-width: 460px;
+  margin-bottom: 24px;
+}

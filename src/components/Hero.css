@@ -1,10 +1,10 @@
 .hero {
   height: 100vh;
   width: 100%;
-  /* background-image: url('https://images.unsplash.com/photo-1520975916090-3105956dac38'); */
+  background-image: url('https://th.bing.com/th/id/R.11142a94708d74f3e0eab76e329e7b87?rik=4SDKcVewiMMYgQ&riu=http%3a%2f%2fmyluxurybargain.com%2fwp-content%2fuploads%2f2025%2f01%2fGucci-Cover-Image.jpg&ehk=2l0uWGNhHlAcXo9a8J4VaIiFm7MpPx1FSk6KjXf2XAU%3d&risl=&pid=ImgRaw&r=0');
   background-size: cover;
   background-position: center;
-  background-color: rgb(230, 207, 177);
+  /* background-color: rgb(230, 207, 177); */
   position: relative;
   padding-top: 70px;
 }

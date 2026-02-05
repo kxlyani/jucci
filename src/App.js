@@ -1,17 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Collection from './components/Collection';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+
+import Home from './pages/Home'
+import CollectionPage from './pages/CollectionPage'
+import CampaignPage from './pages/CampaignPage'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <Hero/>
-      <Collection/>
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/collection" element={<CollectionPage />} />
+        <Route path="/campaign" element={<CampaignPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

@@ -11,3 +11,8 @@ body {
   background: #f6f1eb;
   color: #111;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
